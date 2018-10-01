@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Card Hover and Tilt Effect</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="img-box"><img src="./img/img1.jpeg"></div>
+            <div class="content">
+                <h2>Someone Famous<br><span>UX/UI Designer</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste quod quas ut tempora? Facilis, temporibus.</p>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+            </div>
+        <div class="card">
+            <div class="img-box"><img src="./img/img2.jpeg"></div>
+            <div class="content">
+                <h2>Someone Famous<br><span>UX/UI Designer</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste quod quas ut tempora? Facilis, temporibus.</p>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img-box"><img src="./img/img3.jpeg"></div>
+            <div class="content">
+                <h2>Someone Famous<br><span>UX/UI Designer</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste quod quas ut tempora? Facilis, temporibus.</p>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+            </div>
+    </div>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="./js/tilt.jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.card').tilt({
+                maxTilt: 10,
+                glare: true,
+                maxGlare: 0.4
+            })
+        })
+    </script>
+</body>
+</html>
